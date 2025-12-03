@@ -1,9 +1,9 @@
-FROM alpine:3.19
+FROM alpine:3.22
 
 LABEL description "Simple DNS authoritative server with DNSSEC support" \
       org.opencontainers.image.authors="Veovis <veovis@kveer.fr>"
 
-ARG NSD_VERSION=4.7.0
+ARG NSD_VERSION=4.12.0
 ENV UID=991 GID=991
 
 RUN set -xe; \
